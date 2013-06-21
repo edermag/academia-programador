@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de como calcular a potencia com JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Esse script calcula a potência a partir de um nro base e expoente.
+         * O calculo de potência desse programa só se aplica a nros positivos.
+         *
+         * Utilizamos recursividade para implementar esse algoritmo.
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+
+
+        //função utiliza recursividade para realizar calculo da potência
+        function calculaPotencia(expo, base) {
+            if (expo == 0)
+                return 1;
+        
+            return base * calculaPotencia(--expo, base);
+        }
+
+        function processa() {
+            //utiliza a API DOM para acessar as tags HTML
+            var base = document.getElementById('base').value;
+            var expo = document.getElementById('expoente').value;
+            var div = document.getElementById('resultado');
+
+            if (isNaN(base) || isNaN(expo)){
+                alert('Informe valores válidos (number)!');
+                return; //sai da função
+            }
+
+            if (base < 0) {
+               alert('Programa só calcula com base positiva!');
+               exit;
+            }
+
+            var resultado = calculaPotencia(expo, base);
+            var html = 'Resultado de '+base+' ^ '+expo+' = '+resultado;
+            div.innerHTML = html;
+        }
+    </script>
+
+  </head>
+  <body>
+     <form id='frm'>
+       <table>
+         <tr>
+           <td>Informe a base:</td>
+           <td><input type="text" id="base"/></td>
+         </tr>
+         <tr>
+           <td>Informe o expoente:</td>
+           <td><input type="text" id="expoente"/></td>
+         </tr>
+         <tr>
+           <td colspan="2"><input type="button" value="Calcular" onclick="processa()"></td>
+         </tr>
+       </table>
+     </form>
+     <br/><br/>
+
+     <div id="resultado"></div>
+  </body>
+</html>

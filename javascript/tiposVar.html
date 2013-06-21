@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de como identificar tipos das variáveis</title>
+
+    <script type="text/javascript">
+        /*
+         * JavaScript define o operador typeof para identificar os tipos dos elementos.
+         * Nesse script criamos algumas variáveis de tipos básicos do JavaScript, como: 
+         *   - number, string e boolean.
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+        var indefinido;
+        var nome = 'Jose';
+        var idade = 10;
+        var salario = 1000.5;
+        var clt = true;
+        var hoje = new Date();
+        var vetor = new Array();
+        var nada = null;
+
+        //escreve os valores no html
+        document.write('Indefinido: ' + indefinido + ' - tipo: ' + typeof indefinido + '<br/>');
+        document.write('Nome: ' + nome + ' - tipo: ' + typeof nome + '<br/>');
+        document.write('Idade: ' + idade + ' - tipo: ' + typeof(idade) + '<br/>');
+        document.write('Salario: ' + salario + ' - tipo: ' + typeof salario + '<br/>');
+        document.write('Clt: ' + clt + ' - tipo: ' + typeof(clt) + '<br/>');
+        document.write('Hoje: ' + hoje + ' - tipo: ' + typeof hoje + '<br/>');
+        document.write('Vetor: ' + vetor + ' - tipo: ' + typeof vetor + '<br/>');
+        document.write('Nada: ' + nada + ' - tipo: ' + typeof nada + '<br/>');
+
+        var nroTexto = '100';
+        document.write('<br/>Número com \'\': ' + nroTexto + ' - tipo: ' + typeof nroTexto + '<br/>');
+document.write('Depois de parseInt: ' + parseInt(nroTexto) + ' - tipo: ' + typeof parseInt(nroTexto) + '<br/>');
+    </script> 
+
+  </head>
+  <body>
+  </body>
+</html>

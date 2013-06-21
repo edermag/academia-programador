@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo mostra o nome do dia por extenso com JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Esse script utiliza o comando switch para mostra o nome do dia da semana por extenso.
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+
+        var hoje = new Date();
+        var dia = hoje.getDay();
+        var nomeDia = '';
+
+        switch (dia) {
+            case 1: nomeDia = 'Segunda-feira'; break;
+            case 2: nomeDia = 'Terça-feira'; break;
+            case 3: nomeDia = 'Quarta-feira'; break;
+            case 4: nomeDia = 'Quinta-feira'; break;
+            case 5: nomeDia = 'Sexta-feira'; break;
+            case 6: nomeDia = 'Sabado'; break;
+            case 7: nomeDia = 'Domingo'; break;
+            default: nomeDia = 'Ops, dia inválido!';
+        }
+
+        document.write('Dia da semana: '+nomeDia+'<br/>');
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de declaração de variáveis complementares</title>
+
+    <script type="text/javascript">
+        /*
+         * Nesse script criamos algumas variáveis de tipos complementares do JavaScript, como:
+         *   - Date e Array;
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+        var hoje = new Date();
+
+        //uma opção de criar vetor (array) em JavaScript
+        var frase = ["Programando","em","JavaScript"];
+
+        //escreve os valores no html
+        document.write('Data original (browser): ' + hoje + "<br/>");
+        document.write("Data formata: " + hoje.getDate() + "/" + (hoje.getMonth()+1) + "/"
+          + hoje.getFullYear() + "<br/>");
+        document.write('Frase (vetor de string): ' + frase);
+    </script> 
+
+  </head>
+  <body>
+  </body>
+</html>

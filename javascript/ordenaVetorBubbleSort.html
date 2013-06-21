@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de ordenação de array com BubbleSort em JS</title>
+
+    <script type="text/javascript">
+        /*
+         * A manipulação de vetores (arrays) em JavaScript é extremamente flexível.
+         * Nesse script utilizamos a entrada via teclado para criar e preencher um array de inteiros.
+         * Depois de preencher o array, o programa coloca os números contidos no array em ordem
+         * numérica natural (ascendente).
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+
+        function preenche(vetor) {
+            for (var i = 0; i < vetor.length; i++){
+                vetor[i] = prompt('Informe o número '+ (i+1));
+            }
+        }
+
+        function imprime(vetor) {
+            document.write(vetor.join(' ') + '<br/>');
+        }
+
+        function ordena(vetor) {
+            var houveTroca = true;
+            var aux;
+        
+            while (houveTroca) {
+                houveTroca = false;
+                for (var i = 0; i < vetor.length - 1; i++){
+                    //compara o elemento atual (i) c/ o proximo (i+1)
+                    if (vetor[i] > vetor[i+1]) {
+                        //faz a troca
+                        aux = vetor[i];
+                        vetor[i] = vetor[i+1];
+                        vetor[i+1] = aux;
+
+                        //indica que o array deve ser analisado novamente (while)
+                        houveTroca = true;
+                    }
+                }
+            }
+        }
+
+        var tamanhoArray = parseInt(prompt('Indique o tamanho do array ...'));
+        var vetor = new Array(tamanhoArray);
+
+        preenche(vetor);
+
+        document.write('Conteúdo do array antes de ordenar...<br/>');
+        imprime(vetor);
+
+        ordena(vetor);
+
+        document.write('<br/>');
+        document.write('Conteúdo do array depois de ordenar...<br/>');
+        imprime(vetor);
+    </script> 
+
+  </head>
+  <body>
+  </body>
+</html>

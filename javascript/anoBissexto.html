@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de função que verifica se o ano é bissexto no JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Esse script define uma função para verificar se um determinado ano é ou não Bissexto.
+         *
+         *   - uso de funções;
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+
+        function ehBissexto(ano) {
+            return ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0;
+        }
+
+        for (var anoInformado = 2005; anoInformado <= 2015; anoInformado++) {
+            var resultado = ehBissexto(anoInformado);
+            document.write('Ano '+anoInformado+' é bissexto? '+resultado+'<br/>');
+        }
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>

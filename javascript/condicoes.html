@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de uso de if no JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Script demonstra o uso de comando if (condicional) em diversas situações.
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+        var indefinida;
+        var nada = null;
+        var vazio = '';
+        var condicao = false;
+        var texto = "JavaScript";
+        var vetor = [];
+        var numero = 0; 
+
+        //escreve os valores no html
+        if (!condicao) {
+            document.write('entrou em if (!condicao) <br/>');
+        }
+
+        if (indefinida) { //undefined é false
+            document.write('entrou em if (indefinida) <br/>');
+        } else {
+            document.write('undefined é false <br/>');
+        }
+ 
+        if (!vazio) { //'' é false
+            document.write('entrou em if (!vazio) <br/>');
+        }
+
+        if (nada) { //null é false
+            document.write('entrou em if (nada) <br/>');
+        } else {
+            document.write('null é false <br/>');
+        }
+
+        if (texto) { //string com conteudo é true
+            document.write('entrou em if (texto) <br/>');
+        }
+
+        if (vetor) { //array é true
+            document.write('entrou em if (vetor) <br/>');
+        }
+
+        if (numero) { //0 é false
+            document.write('entrou em if (numero) <br/>');
+        } else {
+            document.write('0 é false <br/>');
+        }
+    </script> 
+
+  </head>
+  <body>
+  </body>
+</html>

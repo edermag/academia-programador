@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de uso de null, undefined e vazio em JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Null em JavaScript é uma valor de objeto, dessa forma podemos assumir
+         * que null é nada de um objeto. Null não é undefined e nem '' (vazio).
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+        var indefinida;
+        var nada = null;
+        var vazio = '';
+
+        //escreve os valores no html
+        document.write('typeof indefinida: ' + typeof indefinida + '<br/>');
+        document.write('typeof nada: ' + typeof nada + '<br/>');
+        document.write('typeof vazio: ' + typeof vazio + '<br/>');
+
+        document.write('indefinida == nada: ' + (indefinida == nada) + '<br/>');
+        document.write('indefinida === nada: ' + (indefinida === nada) + '<br/>');
+        document.write('vazio == nada: ' + (vazio == nada) + '<br/>');
+    </script> 
+
+  </head>
+  <body>
+  </body>
+</html>

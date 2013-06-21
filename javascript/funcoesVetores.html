@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de como utilizar as funções especiais para vetores do JS</title>
+
+    <script type="text/javascript">
+        /*
+         * A manipulação de vetores (arrays) em JavaScript é extremamente flexível.
+         * Nesse script demonstro o uso de algumas funções de arrays, disponíveis no JavaScript.
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+
+        var letras = new Array('J','A','V','A','S','C','R','I','P','T');
+
+        document.write('Vetor letras (original): ' + letras + '<br/>');
+        document.write('Vetor letras (join): ' + letras.join(' ') + '<br/>');
+	//inverte a ordem dos elementos
+        document.write('Vetor letras (reverse): ' + letras.reverse() + '<br/>');
+
+        //coloca os elementos em ordem (string é alfabética)
+        document.write('Vetor letras (sort): ' + letras.sort() + '<br/>');
+
+        //pega um pedaço do array
+        document.write('Pedaço do vetor letras (slice(0,3)): ' + letras.slice(0, 3) + '<br/>');
+    </script> 
+
+  </head>
+  <body>
+  </body>
+</html>

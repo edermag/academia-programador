@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de como calcular a tabuada com JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Esse script calcula a taboada de um determinado número.
+         *
+         *   - uso da API DOM para acessar e manipular as tags HTML;
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+
+         function calculaTabuada(numero) {
+	     if (isNaN(numero)){
+                 alert('Informe um número válido!');
+                 return; //sai da função
+             }
+
+             var n = parseInt(numero); //converte para number
+
+             if (n <= 0) {
+                alert('Informe um número válido para calcular a tabuada!');
+                exit;
+             }
+
+             var div = document.getElementById('resultado');
+             var html = 'Calculando tabuada do ' + n + '...<br/>';
+
+             for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+                 var resultado = multiplicador * n;
+                 html += n + ' x ' + multiplicador + ' = ' + resultado + '<br/>';
+             }
+
+             div.innerHTML = html;
+         }
+    </script>
+
+  </head>
+  <body>
+     <form id='frm'>
+       <table>
+         <tr>
+           <td>Informe o número:</td>
+           <td><input type="text" id="numero"/></td>
+           <td><input type="button" value="Calcular"
+              onclick="calculaTabuada(document.getElementById('numero').value)"></td>
+         </tr>
+       </table>
+     </form>
+     <br/><br/>
+
+     <div id="resultado"></div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de como acessar elementos contidos em vetores no JS</title>
+
+    <script type="text/javascript">
+        /*
+         * A manipulação de vetores (arrays) em JavaScript é extremamente flexível.
+         * Nesse script demonstro como navegar em elementos contidos no array.
+         *
+         *   - uso dos comandos de repetição: for e while
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+        var numeros = [4, 5, 10, 7]; //array de inteiros
+        //outra altenativa para criar array passando os valores - string
+        var letras = new Array('J','A','V','A','S','C','R','I','P','T');
+
+        document.write('Vetor numeros: ' + numeros + '<br/>');
+        //função join defini um separador na hora de apresentar os elementos
+        document.write('Vetor numeros (em outro formato): ' + numeros.join(' - ') + '<br/>');
+
+        var somaNros = 0;
+        //exemplo do for 'tradicional' pra somar os elementos do array
+        for (var i = 0; i < numeros.length; i++) {
+            somaNros += numeros[i];
+        }
+        
+        document.write('Numeros somados: ' + somaNros + '<br/>');
+
+        //imprime o array de string com join
+        document.write('Vetor letras: ' + letras.join(' ') + '<br/>');
+
+        var palavra = "";
+
+        //outro exemplo de for do JS, o for in
+        for (c in letras) {
+            palavra += letras[c]; //concatena string
+        }
+
+        //imprime o array de string com join
+        document.write('Letras concatenadas: ' + palavra + '<br/>');
+
+        var numerosInverso = ""; //string
+        //uso do while para acessar os dados do array em ordem reversa
+        var x = numeros.length-1;
+
+        while (x >= 0) {
+            numerosInverso += numeros[x] + " ";
+            --x; //decremento
+        }
+        document.write('Vetor numeros (em ordem inversa): ' + numerosInverso + '<br/>');
+    </script> 
+
+  </head>
+  <body>
+  </body>
+</html>

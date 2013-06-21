@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo simula o parcelamento de um pagto em JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Esse script simula o valor de parcelamento de uma compra, a partir 
+         * de um preço e nro total de parcelas.
+         *
+         *   - uso de repetição, operações matemáticas simples;
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+
+        var preco = 1000.2;
+        var totalParcelas = 10;
+        var intervaloDias = 30;
+
+        //exibe parcelas sem acrescimento
+        document.write('Pagamento de ' + preco + ' em ' + totalParcelas + ' (sem ascrecimo)' + '<br/>');
+        
+        for (var parcela = 1; parcela <= totalParcelas; parcela++) {
+            var valorParcela = preco / parcela;
+            var dias = intervaloDias * parcela;
+            var texto = '- parcela '+parcela+' no valor de ' + valorParcela.toFixed(2) + ', pagto em ' + dias + ' dias<br/>';
+            document.write(texto);
+        }
+
+        var taxaMes = .5;
+        //reajusta o preco de acordo com a taxa
+        var juros = taxaMes * totalParcelas;
+        preco += preco * (juros / 100);
+
+        //exibe parcelas com acrescimento
+        document.write('<br/><br/>Pagamento de ' + preco + ' em ' + totalParcelas + ' (com ascrecimo de ' + juros + '%)</br>');
+
+        for (var parcela = 1; parcela <= totalParcelas; parcela++) {
+            var valorParcela = preco / parcela;
+            var dias = intervaloDias * parcela;
+            var texto = '- parcela '+parcela+' no valor de ' + valorParcela.toFixed(2) + ', pagto em ' + dias + ' dias<br/>';
+            document.write(texto);
+        }
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>

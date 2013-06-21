@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo do uso operador + no JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Esse script utiliza o operador soma (+) em diferentes situações.
+         *
+         *   - uso de funções;
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+
+        var indefinida;
+        var numero = 50;
+        var condicao = true;
+        var texto = "JavaScript";
+        var hoje = new Date();
+        var vetor = new Array(5, 10, 25);
+        var nada = null;
+
+        //soma os numeros
+        document.write('numero + 10 = '+ (numero + 10) +'<br/>');
+
+        //concatena numero com variável sem valor/tipo (Not a Number)
+        document.write('numero + indefinida = '+ (numero + indefinida) +'<br/>');
+
+        //concatena numero com variável objeto nula (vira zero)
+        document.write('numero + nada = '+ (numero + nada) +'<br/>');
+
+        //converte condicao em 1 e realiza a soma
+        document.write('condicao + 1 = '+ (condicao + 1) +'<br/>');
+
+        //concatena string  
+        document.write('texto + 10 = '+ (numero + 10) +'<br/>');
+
+        //concatena string com variável sem valor/tipo (concatena string undefined)
+        document.write('texto + indefinida = '+ (texto + indefinida) +'<br/>');
+
+        //concatena string com variável sem valor (concatena string null)
+        document.write('texto + nada = '+ (texto + nada) +'<br/>');
+
+        //converte condicao em 1 e realiza a subtração
+        document.write('condicao - 1 = '+ (condicao - 1) +'<br/>');
+
+        document.write('condicao + true = '+ (condicao + true) +'<br/>');
+        document.write('false - condicao = '+ (false - condicao) +'<br/>');
+
+        //gera uma string, usa a função toDate de Date
+        document.write('numero + hoje = '+ (numero + hoje) +'<br/>');
+
+        //não realiza subtração de string, gera NaN (Not a Number)
+        document.write('numero - texto = '+ (numero - texto) +'<br/>');
+
+        //transforma o array em string
+        document.write('texto + vetor = '+ texto + vetor);
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>

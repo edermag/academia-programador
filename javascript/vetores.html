@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de declaração de vetores em JS</title>
+
+    <script type="text/javascript">
+        /*
+         * A manipulação de vetores (arrays) em JavaScript é extremamente flexível.
+         * Nesse script demonstro como definir esse tipo de variável.
+         *
+         * Curiosidades: array em JavaScript é um objeto. É possível acessar os elementos pelo índice,
+         * a partir de 0. Mas é possível utilizar outros valores além de nros que representam índice,
+         * nesse caso o conteúdo representaria um 'atributo' no objeto. Arrays são redimensionáveis.
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+        var numeros = [4, 5, 10, 7]; //array de inteiros
+        //outra altenativa para criar array passando os valores - string
+        var letras = new Array('J','A','V','A','S','C','R','I','P','T');
+
+        //cria o objeto array com capacidade de 5 elementos
+        var varios = new Array(5);
+        varios[0] = 7.6; //number
+        varios[1] = 6; //number
+        varios[2] = "ola"; //string
+        varios[3] = true; //boolean
+        varios[4] = new Date(); //date
+
+        var outrasLetras = ['O','L','A'];
+        //exemplo de outro objeto array concatenando o conteudo de outros 2 arrays
+        var frase = outrasLetras.concat(letras);
+
+        var arrayObj = new Array();
+        arrayObj[0] = "J";
+        arrayObj[1] = "S";
+        //exemplos de 'atributos' no objeto array
+        arrayObj['nome'] = "Pedro";
+        arrayObj['idade'] = 30;
+        //esquisito, mas -1 não é tratado como índice mas como atributo
+        arrayObj[-1] = "X";
+
+        //escreve os valores no html
+        document.write('Vetor numeros: ' + numeros + '<br/>');
+        document.write('Vetor letras: ' + letras + '<br/>');
+        document.write('Vetor varios: ' + varios + '<br/>');
+        document.write('Vetor frase (2): ' + frase + '<br/>');
+        document.write('Vetor arrayObj: ' + arrayObj + '<br/>'); //exibe: J, S
+
+        //imprime 'atributos' customizados do array
+        document.write('Atributos de arrayObj: ' + arrayObj['nome'] + ',' + arrayObj['idade'] + ',' + arrayObj['-1'] + '<br/>'); //exibe: J, S
+
+    </script> 
+
+  </head>
+  <body>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo demonstra como iterar e calcular números no JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Esse script realiza comparações em um determinado range de números.
+         *
+         *   - uso de variáveis, while (repetição), if (condicional) e escopo;
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+
+        var numeroDe = 100;
+	var numeroAte = 2556;
+
+        document.write('Resumo de divisiveis entre ' + numeroDe + ' e ' + numeroAte + '<br/>');
+
+        var pares = 0;
+	var impares = 0;
+	var divPorCinco = 0;
+        
+        while (numeroDe <= numeroAte) {
+            //verifica se o nro é par
+            if (numeroDe % 2 == 0) {
+                pares++;
+            } else {
+                impares++;
+            }
+
+            //verifica se o nro é 
+            if (numeroDe % 5 == 0) {
+                divPorCinco++;
+            }
+
+            numeroDe++;
+        }
+
+        document.write('- Números pares: ' + pares + '<br/>');
+        document.write('- Números impares: ' + impares + '<br/>');
+        document.write('- Números divisiveis por 5: ' + divPorCinco + '<br/>');
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>

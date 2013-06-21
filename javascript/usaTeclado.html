@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo de como entrar com os dados no JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Esse script demonstra como entrar com os dados através da função prompt.
+         *
+         *   - uso de funções nativas do JavaScript para conversão dedados;
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+
+        var nome = prompt('Informe um nome (String) qualquer, depois precione ENTER...');
+        var idade = parseInt(prompt('Agora informe a idade (int)...'));
+        var salario = parseFloat(prompt("E pra encerrar informe o salario (double)..."));
+
+        document.write('Nome informado: ' + nome + '<br/>');
+        document.write('Idade informada: ' + idade + '<br/>');
+        document.write('Salario informado: ' + salario + '<br/>');
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>

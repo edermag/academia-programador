@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo do uso de operadores lógicos no JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Nesse script demonstramos como utilizar os operadores lógicos.
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+        var numero = 1;
+        var condicao = true;
+        var texto = '0';
+
+        //escreve os valores no html
+        document.write('Comparação entre números (numero == 0) ' + (numero == 0) + '<br/>');
+        //1 eh convertido para true
+        document.write('Comparação entre número e boolean (numero == condicao): ' + (numero == condicao) + '<br/>');
+        //0 eh convertido para false
+        document.write('Outra comparação de número c/ boolean (0 == false): ' + (0 == false) + '<br/>');
+
+        document.write('Comparação entre numero e string (numero == texto): ' + (numero == texto) + "<br/>");
+        document.write('Outra comparação entre numero e string (numero == \'1\'): ' + (numero == '1') + "<br/>");
+
+        //operador === verifica o valor e o tipo da variável
+        document.write('Comparação entre número e boolean (numero === condicao): ' + (numero === condicao) + '<br/>');
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>

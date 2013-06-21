@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo demonstra como funcionam o escopo de variáveis do JavaScript</title>
+
+    <script type="text/javascript">
+        /*
+         * Esse script define váriaveis globais e locais (dentro de funções).
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+
+        //variáveis globais
+        var numero = 1;
+        var texto = "JavaScript";
+
+        //funcão sem retorno, procedimento
+        function imprime() {
+            document.write('[imprime] Variável numero (global): '+numero+'<br/>');
+
+            var s = 'escopo';
+            document.write('[imprime] Variável s (local): '+s+'<br/>');
+        }
+
+        //função retorna number
+        function calcula() {
+            //variavel local, com mesmo nome da global
+            var texto = 'JS';
+            document.write('[calcula] Variável texto (local): '+texto+'<br/>');
+            //usa o identificador 'this' para acessar variável global (nome em conflito)
+            document.write('[calcula] Variável texto (global)  c/ this: '+this.texto+'<br/>');
+
+            return 5;
+        }
+
+        function processaCondicao() {
+            if (true) {
+                var x = 10;
+                document.write('[processaCondicao] Dentro do if a variável x: '+x+'<br/>');
+            }
+            //variável continua no escopo da função, mesmo fora do if
+            document.write('[processaCondicao] A variável x continua disponível dentro da função: '+x+'<br/>');
+        }
+
+        imprime();
+        document.write('<br/>');
+        numero = calcula();
+        document.write('<br/>');
+        document.write('Variável numero global (depois de chamar calcula): '+numero+'<br/>');
+
+        document.write('<br/>');
+        processaCondicao();
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 MySQL
 =====================
 
-Aqui você encontra scripts SQL com comandos para construir instância de banco, tabelas, e gerar os dados para preencher essas tabelas.
+Nessa pasta você encontra scripts SQL com comandos para construir instância de banco, tabelas, e gerar os dados para preencher essas tabelas.
 
 Além das tabelas, também disponibilizei exemplos de procedimentos e funções no MySQL.
 

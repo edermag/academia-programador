@@ -1,7 +1,7 @@
 Python
 =====================
 
-Aqui separei o código fonte de alguns programas escritos com a linguagem Python.
+Nessa pasta coloquei o código fonte de alguns programas escritos com a linguagem Python.
 
 A grande maioria desses programas são complementares ao módulo Lógica de Programação do curso Academia do Programador.
 

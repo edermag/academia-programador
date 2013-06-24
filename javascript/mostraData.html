@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript - Exemplo como recuperar a data da máquina (navegador)</title>
+
+    <script type="text/javascript">
+        /*
+         * Nesse script demonstra recuperar a data atual (máquina).
+         *
+         * Módulo: Redes e Internet
+         * Author: Eder Magalhães
+         */
+        var hoje = new Date();
+
+        //escreve os valores no html
+        document.write('Data (original): ' + hoje + "<br/>");
+        document.write('Data formatada: ' + hoje.getDate() + "/" + hoje.getMonth()+ "/" + hoje.getFullYear() + "<br/>");
+        document.write('Data outro formato: ' + hoje.getMonth() + "/" + hoje.getDate() + "/" + hoje.getFullYear()+ "<br/>");
+    </script> 
+
+  </head>
+  <body>
+  </body>
+</html>

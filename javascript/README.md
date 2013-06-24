@@ -1,7 +1,7 @@
 JavaScript
 =====================
 
-Aqui separei o código fonte de alguns programas escritos com a linguagem JavaScript.
+Nessa pasta coloquei o código fonte de alguns programas escritos com a linguagem JavaScript.
 
 A grande maioria desses programas são complementares ao módulo Lógica de Programação e Redes e Internet do curso Academia do Programador.
 

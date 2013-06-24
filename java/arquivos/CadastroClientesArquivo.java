@@ -22,11 +22,13 @@ public class CadastroClientesArquivo {
         //habilita a tecla enter como separador de conteúdo
         teclado.useDelimiter(System.getProperty("line.separator"));
 
-        //exibe o menu de navegação do usúario
-        montaMenu();
-        int opcao = teclado.nextInt();                    
-                  
-        while (opcao != 3) {
+        int opcao;
+
+        do {
+            //exibe o menu de navegação do usúario
+            montaMenu();
+            opcao = teclado.nextInt();
+
             switch (opcao) {
                 case 1:
                     System.out.println("-- Inserindo clientes no arquivo --------");
@@ -48,19 +50,22 @@ public class CadastroClientesArquivo {
                     break;
                 //remover esse case (lab opcional)
                 case 0:
-                    System.out.println("-- Apagando cliente do arquivo --------");
+                    System.out.println("-- Apagando cliente do arquivo ----------");
                     System.out.println("CPF do cliente: ");
                     String cpfRemover = teclado.next();
                     remove(cpfRemover);
                     System.out.println("-----------------------------------------");
                     break;
+                case 3:
+                    System.out.println("-- Finalizando programa -----------------");
+                    break;
                 default:
-                    System.out.println("opcao invalida");
+                    System.out.println("Opção inválida!");
                     break;
             }
-            montaMenu();
-            opcao = teclado.nextInt();
-        }
+
+        } while (opcao != 3);
+
     }
 
     /*
@@ -102,7 +107,7 @@ public class CadastroClientesArquivo {
     }
 
     /*
-     * Procedimento remove o registro do cliente (linha) do arquivo, se existir.s
+     * Procedimento remove o registro do cliente (linha) do arquivo, se existir.
      */
     static void remove(String cpfRemover) {
         //renomeia o arquivo original
@@ -122,7 +127,7 @@ public class CadastroClientesArquivo {
             }
         }
         if (removeu) {
-            System.out.println("Removeu cliente com cpf "+cpfRemover);
+            System.out.println("Removeu o cliente com cpf "+cpfRemover);
         }
 
         Arquivo.fechar(original);

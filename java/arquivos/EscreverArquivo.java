@@ -16,7 +16,7 @@ public class EscreverArquivo {
         Arquivo meuArquivo = Arquivo.abrirEscrita(nomeArquivo, "append");
         
         Arquivo.escrever(meuArquivo, "Olá, este é meu primeiro arquivo");
-        Arquivo.escrever(meuArquivo, "Testando gravação de dados em arquivo texto.");
+        Arquivo.escrever(meuArquivo, "Testando gravação de dados em arquivo texto (em Java).");
 
         Arquivo.fechar(meuArquivo);
 

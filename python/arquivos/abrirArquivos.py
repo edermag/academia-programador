@@ -21,5 +21,5 @@ a.close();
 b.close();
 c.close();
 
-print "Programa carregou e fechou 4x o arquivo teste.txt";
+print "Programa carregou e fechou 3x o arquivo teste.txt";
 

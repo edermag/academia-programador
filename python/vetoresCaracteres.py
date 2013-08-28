@@ -8,6 +8,8 @@
 #   - uso do comando for para preencher arrays;
 #   - uso da função xrange para definir os limites do for;
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/vetores-caracteres-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

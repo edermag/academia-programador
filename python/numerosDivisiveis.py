@@ -4,6 +4,8 @@
 # Objetivos:
 #   - uso de variáveis, while (repetição), if (condicional) e escopo;
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/numeros-divisiveis-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

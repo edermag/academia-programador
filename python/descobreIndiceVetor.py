@@ -8,6 +8,8 @@
 #   - uso de array (vetor);
 #   - uso do comando for (repetição) e if (condicional);
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/descobre-indice-vetor-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

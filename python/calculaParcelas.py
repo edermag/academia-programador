@@ -6,6 +6,8 @@
 #   - uso de comando for (repetição);
 #   - operações matemáticas simples;
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/calculadora-parcelas-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

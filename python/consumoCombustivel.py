@@ -5,6 +5,8 @@
 #   - quantidade de horas percorridas;
 #   - velocidade média;
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/consumo-combustivel-ap/
+#
 # Objetivos:
 #   - exercício de lógica;
 #

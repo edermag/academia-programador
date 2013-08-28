@@ -2,6 +2,8 @@
 
 # Programa Python demonstra recuperar a data atual (máquina).
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/mostra-data-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

@@ -13,6 +13,8 @@
 #   - uso de algoritmos para resolver o problema de ordenação de dados;
 #   - demonstrar como implementar o algoritmo Bubble Sort em Python;
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/ordena-vetor-bubblesort-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

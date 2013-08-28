@@ -11,6 +11,8 @@
 #   - uso dos comandos de repetição for e while.
 #   - uso da API do Python para geração de números randômicos.
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/mega-sena-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

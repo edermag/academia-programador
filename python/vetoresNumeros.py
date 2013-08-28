@@ -9,6 +9,8 @@
 #   - uso da função len, pra indicar o tamanho do array;
 #   - uso da função range para definir os limites do for;
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/vetores-numeros-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

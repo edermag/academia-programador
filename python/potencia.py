@@ -8,6 +8,8 @@
 # Objetivos:
 #   - exercício de lógica;
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/potencia-positivos-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

@@ -4,6 +4,8 @@
 # programa calculas quantas peças dentro uma metragem maior (taboas). Dessa forma o Marceiro
 # pode escolher qual a melhor metragem de taboa.
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/calculo-marceneiro-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

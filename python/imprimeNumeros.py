@@ -4,6 +4,8 @@
 # Objetivos:
 #   - uso de repetições com o comando while.
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/imprime-numeros-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

@@ -7,6 +7,8 @@
 # Objetivos:
 #   - uso de literais suportadas pelo Python;
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/tipos-literais-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

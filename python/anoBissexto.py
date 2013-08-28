@@ -5,6 +5,8 @@
 #   - uso de funções;
 #   - uso de repetições com o comando for in.
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/ano-bissexto-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

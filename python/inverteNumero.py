@@ -2,6 +2,8 @@
 
 # Programa Python demonstra como inverter um número inteiro.
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/inverte-numero-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

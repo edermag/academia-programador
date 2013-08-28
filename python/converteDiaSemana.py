@@ -5,6 +5,8 @@
 # Objetivos:
 #   - uso de multiplas condições boolean;
 #
+# Acesse e execute esse código Python em: http://pythonfiddle.com/converte-dia-semana-ap/
+#
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 

@@ -1,5 +1,5 @@
 /**
- * Programa Java otimiza o trabalho do Marceneiro, definido o tamanho da peça (pedaço) o
+ * Programa Java otimiza o trabalho do Marceneiro, uma vez definido o tamanho da peça (pedaço) o
  * programa calculas quantas peças dentro uma metragem maior (taboas). Dessa forma o Marceiro
  * pode escolher qual a melhor metragem de taboa.
  *

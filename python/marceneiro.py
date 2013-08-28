@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Programa Python otimiza o trabalho do Marceneiro, definido o tamanho da peça (pedaço) o
+# Programa Python otimiza o trabalho do Marceneiro, uma vez definido o tamanho da peça (pedaço) o
 # programa calculas quantas peças dentro uma metragem maior (taboas). Dessa forma o Marceiro
 # pode escolher qual a melhor metragem de taboa.
-#
-# Objetivos:
-#   - exercício de lógica;
 #
 # Módulo: Lógica de programação
 # Author: Eder Magalhães

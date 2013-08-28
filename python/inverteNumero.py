@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Programa Python implementa uma calculadora, com uma função para cada operação básica.
+# Programa Python demonstra como inverter um número inteiro.
 #
 # Módulo: Lógica de programação
 # Author: Eder Magalhães

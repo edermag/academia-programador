@@ -1,28 +1,14 @@
-# -*- coding: utf-8 -*-
+# Author: Samuel Olimpio
 
-# Programa Python calcula a taboada de um determinado número.
-#
-# Objetivos:
-#   - exercício de lógica;
-#
-# Acesse e execute esse código Python em: http://pythonfiddle.com/tabuada-simples-ap/
-#
-# Módulo: Lógica de programação
-# Author: Eder Magalhães
 
-# Calcula da tabuada do número informado como argumento.
-# Início do procedimento
 def calculaTabuada(n):
-    if (n <= 0):
-        print "Informe um número válido para calcular a tabuada!";
-    else :
-        print "Calculando tabuada do ", n, "...";
+        print ("Calculando tabuada do ", n, "...");
 
         for multiplicador in range(1, 11):
             resultado = multiplicador * n;
-            print n, " x ", multiplicador, " = ", resultado;
-# Fim do procedimento
+            print (n, " x ", multiplicador, " = ", resultado);
 
-numero = int(raw_input("Informe o número para calcular a tabuada: "));
+numero = int(input("Informe o número para calcular a tabuada: "));
 calculaTabuada(numero);
 
+#Obs. nesse programa é possivel calcular qualquer numero para a tabuada :D

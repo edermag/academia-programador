@@ -13,17 +13,16 @@
 # Módulo: Lógica de programação
 # Author: Eder Magalhães
 
-tanqueGasolina = int(raw_input("Informe a quantidade de gasolina no tanque: "));
+Gasolina = float(input("Informe a quantidade de gasolina no tanque: "));
 
-horasPercorridas = int(raw_input("Ok, agora informe quantas horas foram precorridas: "));
+HP = int(input("Ok, agora informe quantas horas foram precorridas: "));
 
-velocidadeMedia = int(raw_input("Por fim me diga qual era a velocidade média: "));
+VM = int(input("Por fim me diga qual era a velocidade média: "));
 
-if (tanqueGasolina < 1 or horasPercorridas < 1 or velocidadeMedia < 1):
-    print "Entre com dados validos!";
+if (Gasolina < 1 or HP < 1 or VM < 1):
+    print ("Entre com dados validos!");
 else :
-    #calculo para descobrir o valor
-    kmMedia = velocidadeMedia * horasPercorridas / float(tanqueGasolina);
+    kmMedia = (VM * HP)/float(Gasolina);
 
-    print "\nO consumo médio foi de ", kmMedia, " km percorridos por litro";
+    print ("\nO consumo médio foi de ", kmMedia, " km percorridos por litro");
 
